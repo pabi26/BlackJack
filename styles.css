@@ -314,34 +314,33 @@ button{
 
  #prevBtn,
  #nextBtn{
-    font-size: 2rem;
+    font-size: 2.5rem;
     
  }
 
  #nextBtn{
     position: relative;
     left: 20%;
-    bottom: 20%;
+    bottom: 25%;
     
  }
  #prevBtn{
     position: relative;
     right: 20%;
-    bottom: 20%;
+    bottom: 25%;
 
  }
  
 #close-tips{
-    font-size: 1rem;
+    font-size: 2rem;
     position: relative;
-    bottom: 17%;
+    bottom: 20%;
  }
 
  #close-rules {
-    margin: 1rem;
-    font-size: 1.5rem;
+    font-size: 2rem;
     position: relative;
-    bottom: 0%;
+    bottom: 3%;
     border: none;
     background-color: rgba(0, 0, 0, 0);
  }
