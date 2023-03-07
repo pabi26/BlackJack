@@ -1,0 +1,470 @@
+*{
+    margin: 0;
+}
+
+body{
+    color: rgb(255, 217, 5);
+    text-align: center;
+    background-color: rgb(52, 52, 52);
+}
+
+.container{
+    padding: 1rem;  
+    min-height: 570px;
+}
+
+
+
+
+/* Typography */
+
+
+h1{
+    font-size: 3rem;
+    margin: 1.5rem;
+}
+
+h3{
+    font-size: 1.2rem;
+}
+
+.rules{
+    font-size: 0.8rem;
+    padding: 0.5rem;
+
+}
+
+#warning{
+    margin-bottom: 1.5rem;
+}
+
+.btn{
+    width: fit-content;
+    background: none;
+    border: none;
+    color: gold;
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+}
+
+input{
+    width: 10rem;
+    text-align: center;
+    margin: 1.5rem auto 0.2rem auto;
+}
+
+.underline{
+    text-decoration: underline;
+}
+
+
+
+/* First Page*/
+#first-page{
+    background-image: url('images/gg.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+
+/* Second Page */
+
+#rules-page{
+    background-image: url('images/HD.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: none;
+    padding: 30px 15px;
+    
+    
+    
+}
+
+
+
+#starting-message{
+    padding: 1rem;
+}
+
+
+
+/* Main Page*/
+
+#game-display{
+    background-image: url('images/depositphotos_62438143-stock-illustration-luxury-black-poker-background-with.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100vh;
+    display: none;
+    padding: 30px 15px;
+}
+
+#cards{
+    max-width: 350px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+#dealer{
+    margin: 1rem auto;
+}
+
+#player{
+    margin-top: 1rem;
+}
+
+#player,
+#dealer,
+#player-hand-1,
+.player-split-hands,
+.split-hand-options,
+#player-first-split-hand,
+#player-second-split-hand,
+#bottom-display{
+    display: flex;
+}
+
+#player-first-split-hand,
+#player-second-split-hand{
+    display: none;
+}
+
+#player-first-split-hand{
+    margin-right: 1rem;
+}
+
+
+.player-split-hands,
+#player,
+#dealer{
+    justify-content: center;
+}
+
+
+#bottom-display{
+    flex-direction: column;
+    width: 8rem;
+    margin: 1rem auto;
+    
+}
+
+
+
+#player-second-hand,
+#player-first-hand,
+#player-hand,
+#dealer-hand{
+    width: 4rem;
+    height: 6.5rem;
+    border: 1px solid gold;
+    background-color: rgba(0, 0, 0, 0.578);
+    padding: 0.7rem;
+    margin-bottom: 0.5rem;
+}
+
+
+
+#options{
+    margin: 1rem;
+    width: 50px;
+
+}
+
+.split-hand-options{
+    flex-direction: column;
+    margin: 3rem 0 0 1rem;
+}
+
+
+#dealer-hit-btn{
+    margin-top: 60px;
+    margin-left: 15px;
+}
+
+
+button{
+    height: 2em;
+    width: 4em;
+    margin-bottom: 1rem;
+}
+
+
+
+#deal-cards-btn,
+#restart-btn{
+    width: 8rem;
+}
+
+#message{
+    margin-top: 1rem;
+}
+
+
+
+#settings{
+    display: flex;
+    justify-content: end;
+    justify-content: space-between;
+    max-width: 300px;
+    margin: auto;
+}
+
+
+
+
+
+/*Switch*/
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 48px;
+    height: 25px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(255, 0, 0);
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+
+    position: absolute;
+    content: "";
+    
+    height: 20px;
+    width: 20px;
+    left: 3px;
+    bottom: 2px;
+    background-color: gold;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: rgb(14, 14, 14);
+  }
+  
+  input:focus + .slider {
+    border: 1px rgb(255, 218, 9) solid;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(20px);
+    -ms-transform: translateX(20px);
+    transform: translateX(20px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+
+#red,
+#black{
+    font-size: 1.3rem;
+    margin-top: 2px;
+}
+
+  
+
+ #tipsDisplay button,
+ #close-rules{
+    color: rgb(255, 204, 0);
+    width: 2em;
+    height: 2em;
+    background-color: rgb(0, 0, 0);
+    border: 1px rgb(255, 191, 0) solid;
+    border-radius: 50%;
+
+ }
+
+ #prevBtn,
+ #nextBtn{
+    font-size: 1rem;
+ }
+
+ #nextBtn{
+    position: relative;
+    left: 20%;
+    bottom: 5%;
+    
+ }
+ #prevBtn{
+    position: relative;
+    right: 20%;
+    bottom: 5%;
+
+ }
+ 
+#close-tips{
+    font-size: 1rem;
+    position: relative;
+    bottom: 5%;
+ }
+
+ #close-rules {
+    margin: 1rem;
+    font-size: 1rem;
+    position: relative;
+    bottom: 6%;
+ }
+
+
+ #rulesDisplay,
+ #tipsDisplay{
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   transform: translate(-50%, -50%);
+   display: none;
+}
+ 
+#rules-container,
+#tips-container{
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.843);
+    min-height: 450px;
+    width: 316px;
+    padding: 1rem;
+    margin: 0 auto;
+    border: 1px gold solid;
+ }
+
+ li{
+    padding: 0.2rem;
+    text-align: start;
+ }
+
+
+ .tip-slide{
+    margin-bottom: 2rem;
+    min-height: 450px;
+    color: rgb(255, 204, 0);
+    width: 100%;
+    background-color:rgba(255, 255, 255, 0.108);
+    border: 1px gold solid;
+ }
+ #main-rules{
+    background-color:rgba(255, 255, 255, 0.108);
+    border: 1px gold solid;
+
+ }
+
+ #title{
+    padding: 1rem ;
+    font-size: 1.5rem;
+}
+
+#subtitle{
+    width: 75%;
+    margin: auto;
+    padding-bottom: 1rem;
+}
+
+
+#rule-title{
+    padding: 1rem;
+}
+
+#rules{
+    padding: 0.8rem;
+}
+.rule{
+    font-size: 0.87rem;
+}
+
+
+@media (min-width: 600px ){
+    #rules-page h2{
+        font-size: 2rem;
+    }
+    #rules-page h4{
+        font-size: 1rem;
+    }
+    #settings{
+        max-width: 350px;
+    }
+}
+
+@media (min-width: 700px ){
+    #rules-page h2{
+        font-size: 2.5rem;
+        padding-bottom: 1rem;
+    }
+    #settings{
+        max-width: 400px;
+    }
+}
+
+
+
+@media (min-width: 800px) {
+    #first-page h1{
+        font-size: 3.5rem;
+    }
+    #first-page h2{
+        font-size: 2rem;
+    }
+    #first-page input{
+        width: 12rem;
+    }
+    #first-page a{
+        font-size: 2rem;
+    }
+    #rules-page h4{
+       font-size: 1.1rem;
+    }
+   
+
+}
+
+
+@media (min-width: 900px) {
+    #rules-page h2{
+        font-size: 3rem;
+    }
+}
+
+
+@media (min-width: 1130px) {
+    #rules-page h4{
+        font-size: 1.2rem;
+    }
+}
+
+
+@media (min-width: 1250px) {
+    #rules-page h4{
+        font-size: 1.3rem;
+    }
+}
