@@ -46,8 +46,10 @@ document.getElementById('no').addEventListener('click', function (){
     rulesPage.style.display = 'none'
     firstPage.style.display = 'flex'
 })
-
-
+document.getElementById('back').addEventListener('click', function() {
+    rulesPage.style.display = 'block'
+    gameDisplay.style.display = 'none'
+})
 
 
 
@@ -201,3 +203,5 @@ isChecked.addEventListener('change', function(){
         document.getElementById('black').style.color = "black"
     }
 });
+
+
