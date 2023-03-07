@@ -361,9 +361,9 @@ button{
 #tips-container{
     text-align: center;
     background-color: rgba(0, 0, 0, 0.843);
-    min-height: 550px;
-    max-height: 551px;
-    height: 80vh;
+    min-height: 649px;
+    max-height: 650px;
+    height: 100%;
     width: 80vw;
     padding: 1rem;
     margin: 2rem auto;
@@ -411,7 +411,7 @@ button{
     padding: 0.8rem;
 }
 .rule{
-    font-size: 1rem;
+    font-size: 0.9rem;
 }
 
 
