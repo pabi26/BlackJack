@@ -317,22 +317,23 @@ button{
  }
 
  #nextBtn{
-    position: relative;
-    left: 20%;
-    bottom: 34%;
+    position: fixed;
+    left: 60%;
+    bottom: 15%;
     
  }
  #prevBtn{
-    position: relative;
-    right: 20%;
-    bottom: 34%;
+    position: fixed;
+    right: 60%;
+    bottom: 15%;
 
  }
  
 #close-tips{
     font-size: 2rem;
-    position: relative;
-    bottom: 34%;
+    position: fixed;
+    right: 43%;
+    bottom: 15%;
  }
 
  #close-rules {
