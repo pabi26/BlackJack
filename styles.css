@@ -319,13 +319,13 @@ button{
  #nextBtn{
     position: fixed;
     left: 70%;
-    bottom: 10%;
+    bottom: 6%;
     
  }
  #prevBtn{
     position: fixed;
     right: 70%;
-    bottom: 10%;
+    bottom: 6%;
 
  }
  
@@ -333,7 +333,7 @@ button{
     font-size: 2rem;
     position: fixed;
     right: 43%;
-    bottom: 10%;
+    bottom: 6%;
  }
 
  #close-rules {
