@@ -1,4 +1,4 @@
-import {dealCards, reset} from "./deck.js"
+import {showDealerHands, dealCards, reset} from "./deck.js"
 import { canSplitCards, split,getFirstHand, getSecondHand, standFirstHand, standSecondHand,splitHandWinner, firstHandScore, secondHandScore } from "./splitCardFunctions.js"
 import { calculateDealerScore, calculatePlayerScore, dealerScore, playerScore} from "./calculateScore.js"
 import { getPlayerCard, getDealerCard, stand, winner, message} from "./functions.js"
@@ -57,10 +57,11 @@ document.getElementById('back').addEventListener('click', function() {
 dealCardsBtn.addEventListener('click', function(){
     dealCards()
     calculatePlayerScore()
-    calculateDealerScore()
     displayOptions()
     canSplitCards()
     if (dealerScore === 21){
+        showDealerHands()
+        calculateDealerScore()
         message.textContent = 'Dealer Wins'
         hitBtn.disabled = true
         standBtn.disabled = true
@@ -69,7 +70,7 @@ dealCardsBtn.addEventListener('click', function(){
         message.textContent = 'Player Wins'
         hitBtn.disabled = true
         standBtn.disabled = true
-    }
+    } 
 })
 
 function displayOptions(){
@@ -103,6 +104,8 @@ dealerHitBtn.addEventListener('click', function(){
 //stand button
 
 standBtn.addEventListener('click', function(){
+    showDealerHands()
+    calculateDealerScore()
     stand() 
     if(dealerScore < 17){
         dealerHitBtn.disabled = false
@@ -144,6 +147,8 @@ document.getElementById('second-hand-hit-btn').addEventListener('click', functio
 
 // Second Hand Stand Button
 document.getElementById('second-hand-stand-btn').addEventListener('click', function() {
+    showDealerHands()
+    calculateDealerScore()
     standSecondHand()
     if(dealerScore < 17){
         dealerHitBtn.disabled = false

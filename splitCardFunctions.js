@@ -1,5 +1,5 @@
-import {playerCards, newDeck} from "./deck.js";
-import { calculateScore, dealerScore  } from "./calculateScore.js";
+import {playerCards, newDeck, showDealerHands} from "./deck.js";
+import { calculateScore, dealerScore, calculateDealerScore  } from "./calculateScore.js";
 let firstHand = [];
 let secondHand = [];
 let firstHandScore = [];
@@ -18,7 +18,7 @@ const secondHandStandBtn = document.getElementById('second-hand-stand-btn')
 const dealerHitBtn = document.getElementById('dealer-hit-btn')
 let messageOne = document.getElementById('messageOne');
 let messageTwo = document.getElementById('messageTwo')
-
+let message = document.getElementById("message")
 
 //funtion to decide if cards can be split
 
@@ -145,6 +145,7 @@ function secondHandBusted() {
         secondHandHitBtn.disabled = true;
         secondHandStandBtn.disabled = true;
         messageTwo.textContent = 'Second hand busts!';
+        determineIfDealerCanHit()
     }
 }
 
@@ -173,11 +174,16 @@ function standSecondHand(){
 }
 
 
-function bothHandsBust() {
+function determineIfDealerCanHit() {
     if (firstHandBust === true && secondHandBust === true) {
-        console.log('Both hands bust, Dealer Wins!')
+        message.textContent = 'Both hands bust, Dealer Wins!'
+    } else if (firstHandBust === false && secondHandBust === true) {
+        showDealerHands()
+        calculateDealerScore()
+        dealerHitBtn.disabled = false
     }
 }
+
 
 
 
@@ -262,5 +268,6 @@ export {canSplitCards,
         secondHand,
         playerFirstHand,
         playerSecondHand,
-        isSplit
+        isSplit,
+        determineIfDealerCanHit
         };

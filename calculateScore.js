@@ -31,7 +31,6 @@ let calculateScore = (hand) => {
 };
 
 
-
   
 function calculatePlayerScore(){
     playerScore = calculateScore(playerCards);
@@ -43,6 +42,7 @@ function calculateDealerScore(){
     dealerScore = calculateScore(dealerCards);
     dealerSum.textContent = 'Dealer score: ' + dealerScore;
 }
+
 
 
 

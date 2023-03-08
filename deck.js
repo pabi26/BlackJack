@@ -37,11 +37,14 @@ function dealCards(){
     playerCards = [shuffledDeck[0], shuffledDeck[2]];
     dealerCards = [shuffledDeck[1], shuffledDeck[3]];
     playerHand.textContent = ( playerCards[0] + ' and ' + playerCards[1]);
-    dealerHand.textContent = ( dealerCards[0] + ' and ' + dealerCards[1]);
+    dealerHand.textContent = ( dealerCards[0]);
     return {playerCards, dealerCards}
     
 }
 
+function showDealerHands(){
+    dealerHand.textContent = ( dealerCards[0] + ' and ' + dealerCards[1]);
+}
 
 
 function reset(){
@@ -74,6 +77,7 @@ function resetDisplay() {
 
 
 export {dealCards,
+        showDealerHands,
         playerCards,
         dealerCards,
         dealerHand,
