@@ -22,11 +22,10 @@ function getRulesHtml() {
             <ul>
                 <li class = "rule">${rule}</li>
             </ul>
-        
         `;
     } 
     if(ruleHtml !== ``) {
-        rulesElement.innerHTML = ruleHtml; 
+        rulesElement.innerHTML = ruleHtml += `<button id="close-rules">X</button>`; 
     }
 }
 

@@ -78,7 +78,7 @@ function getTipHtml() {
         `;
     } 
     // Set the HTML content of the tip slide container
-    tipSlide.innerHTML = tipHtml;
+    tipSlide.innerHTML = tipHtml 
    
 }
 
