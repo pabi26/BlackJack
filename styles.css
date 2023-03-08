@@ -319,20 +319,20 @@ button{
  #nextBtn{
     position: relative;
     left: 20%;
-    bottom: 25%;
+    bottom: 34%;
     
  }
  #prevBtn{
     position: relative;
     right: 20%;
-    bottom: 25%;
+    bottom: 34%;
 
  }
  
 #close-tips{
     font-size: 2rem;
     position: relative;
-    bottom: 20%;
+    bottom: 34%;
  }
 
  #close-rules {
