@@ -115,7 +115,7 @@ input{
 
 #cards{
     max-width: 350px;
-    margin: 0 auto;
+    margin: 2rem auto;
     height: 100%;
 }
 
@@ -408,35 +408,11 @@ button{
     padding: 0.8rem;
 }
 .rule{
-    font-size: 0.85rem;
+    font-size: 0.9rem;
 }
 
 
 @media (min-width: 600px ){
-    #rules-page h2{
-        font-size: 2rem;
-    }
-    #rules-page h4{
-        font-size: 1rem;
-    }
-    #settings{
-        max-width: 350px;
-    }
-}
-
-@media (min-width: 700px ){
-    #rules-page h2{
-        font-size: 2.5rem;
-        padding-bottom: 1rem;
-    }
-    #settings{
-        max-width: 400px;
-    }
-}
-
-
-
-@media (min-width: 800px) {
     #first-page h1{
         font-size: 3.5rem;
     }
@@ -449,30 +425,168 @@ button{
     #first-page a{
         font-size: 2rem;
     }
-    #rules-page h4{
-       font-size: 1.1rem;
+    #rules-page{
+        padding: 50px;
     }
-   
+    #rules-page h2{
+       font-size: 2rem;
+       padding-bottom: 1rem;
+    }
+    #rules-page li{
+        font-size: 1.3rem;
+    }
+    #rules-page h3{
+        font-size: 1.5rem;
+    }
+    .btn{   
+        font-size: 2rem ;
+    }
+
+    #settings{
+        max-width: 450px;
+    }
+}
+
+@media (min-width: 700px ){
+    #first-page h1{
+        font-size: 4rem;
+    }
+    #first-page h2{
+        font-size: 2.5rem;
+    }
+    #first-page input{
+        width: 14rem;
+    }
+    #first-page a{
+        font-size: 2.5rem;
+    }
+    #rules-page h2{
+        font-size: 2.5rem;
+     }
+     #rules-page li{
+         font-size: 1.5rem;
+     }
+     #rules-page h3{
+         font-size: 1.7rem;
+     }
+     .btn{   
+         font-size: 2.5rem ;
+     }
+    #settings{
+        max-width: 500px;
+    }
+}
+
+
+
+@media (min-width: 800px) {
+    #first-page h1{
+        font-size: 5rem;
+    }
+    #first-page h2{
+        font-size: 3rem;
+    }
+    #first-page input{
+        width: 16rem;
+    }
+    #first-page a{
+        font-size: 3rem;
+    }
+    #rules-page h2{
+        font-size: 3rem;
+     }
+     #rules-page li{
+         font-size: 1.7rem;
+     }
+     #rules-page h3{
+         font-size: 1.9rem;
+     }
+     .btn{   
+         font-size: 3rem ;
+     }
 
 }
 
 
 @media (min-width: 900px) {
-    #rules-page h2{
-        font-size: 3rem;
+    #first-page h1{
+        font-size: 6.5rem;
     }
+    #first-page h2{
+        font-size: 3.5rem;
+    }
+    #first-page input{
+        width: 18rem;
+    }
+    #first-page a{
+        font-size: 3.5rem;
+    }
+    #rules-page h2{
+        font-size: 3.5rem;
+     }
+     #rules-page li{
+         font-size: 1.9rem;
+     }
+     #rules-page h3{
+         font-size: 2.1rem;
+     }
+     .btn{   
+         font-size: 3.5rem ;
+     }
 }
 
 
 @media (min-width: 1130px) {
-    #rules-page h4{
-        font-size: 1.2rem;
+    #first-page h1{
+        font-size: 8rem;
+    }
+    #first-page h2{
+        font-size: 4rem;
+    }
+    #first-page input{
+        width: 20rem;
+    }
+    #first-page a{
+        font-size: 4rem;
+    }
+    #rules-page h2{
+        font-size: 4rem;
+    }
+    #rules-page li{
+        font-size: 2.1rem;
+    }
+    #rules-page h3{
+        font-size: 2.3rem;
+    }
+    .btn{   
+        font-size: 4rem ;
     }
 }
 
 
 @media (min-width: 1250px) {
-    #rules-page h4{
-        font-size: 1.3rem;
+    #first-page h1{
+        font-size: 10rem;
+    }
+    #first-page h2{
+        font-size: 4.5rem;
+    }
+    #first-page input{
+        width: 22rem;
+    }
+    #first-page a{
+        font-size: 4.5rem;
+    }
+    #rules-page h2{
+        font-size: 4.5rem;
+    }
+    #rules-page li{
+        font-size: 2.3rem;
+    }
+    #rules-page h3{
+        font-size: 2.5rem;
+    }
+    .btn{   
+        font-size: 4.5rem ;
     }
 }
