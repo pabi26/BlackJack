@@ -238,6 +238,7 @@ i:hover{
 
 #message{
     margin-top: 1rem;
+
 }
 
 
@@ -388,7 +389,7 @@ i:hover{
     text-align: center;
     background-color: rgba(0, 0, 0, 0.843);
     height: 85%;
-    width: 80%;
+    max-width: 400px;
     padding: 1rem;
     margin: 2rem auto;
     border: 1px gold solid;
@@ -469,11 +470,54 @@ i:hover{
     #rules-page h3{
         font-size: 2rem;
     }
-   
-
+    #tips-container,
+    #rules-container,
     #settings{
         max-width: 450px;
     }
+    #cards h3{
+        font-size: 1.5rem;
+    }
+    #player-second-hand,
+    #player-first-hand,
+    #player-hand,
+    #dealer-hand{
+    width: 5.6rem;
+    height: 8.5rem;
+    }
+
+    .rule{
+        font-size: 1.3rem;
+    }
+
+    #title h3{
+        font-size: 1.7rem;
+    }
+
+    #subtitle{
+        font-size: 1.2rem;
+    }
+    #tips{
+        font-size: 1.4rem;
+    }
+    #nextBtn{
+        left: 60%;
+        bottom: 10%;
+        
+     }
+     #prevBtn{
+        right: 60%;
+        bottom: 10%;
+    
+     }
+     
+    #close-tips{
+        font-size: 2rem;
+        position: fixed;
+        right: 47%;
+        bottom: 10%;
+     }
+
 }
 
 @media (min-width: 1024px ){
@@ -505,11 +549,37 @@ i:hover{
     #rules-page h3{
         font-size: 2.5rem;
     }
-    
-   
+    #tips-container,
+    #rules-container,
     #settings{
-        max-width: 500px;
+        max-width: 600px;
     }
+    #cards h3{
+        font-size: 2rem;
+    }
+    #player-second-hand,
+    #player-first-hand,
+    #player-hand,
+    #dealer-hand{
+    width: 5.8rem;
+    height: 9rem;
+    }
+    .rule{
+        font-size: 1.55rem;
+    }
+
+    #title h3{
+        font-size: 2rem;
+    }
+
+    #subtitle{
+        font-size: 1.5rem;
+    }
+    #tips{
+        font-size: 1.6rem;
+    }
+
+
 }
 
 
@@ -543,6 +613,36 @@ i:hover{
     #rules-page h3{
         font-size: 3rem;
     }
+    #tips-container,
+    #rules-container,
+    #settings{
+        max-width: 800px;
+    }
+    #cards h3{
+        font-size: 2.5rem;
+    }
+    #player-second-hand,
+    #player-first-hand,
+    #player-hand,
+    #dealer-hand{
+    width: 6rem;
+    height: 9.5rem;
+    }
+    .rule{
+        font-size: 1.9rem;
+    }
+
+    #title h3{
+        font-size: 2.4rem;
+    }
+
+    #subtitle{
+        font-size: 2rem;
+    }
+    #tips{
+        font-size: 1.8rem;
+    }
+
 
 }
 
