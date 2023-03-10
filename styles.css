@@ -92,7 +92,7 @@ input{
 }
 
 #rules-page ul{
-    width: 400px;
+    width: 320px;
     margin: 0 auto;
 }
 
@@ -400,6 +400,9 @@ i:hover{
     text-align: start;
  }
 
+ #rules-page li{
+    font-size: 16.5px ;
+ }
 
  .tip-slide{
     margin-bottom: 2rem;
